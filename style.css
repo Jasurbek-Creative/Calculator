@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--text-color);
-  font-family: Poppins ;
+  font-family: Poppins;
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
   background-size: cover;
 }
 .calculator {
-  width: 375px;
+  width: 335px;
   height: 612px;
   background-color: var(--primary-color);
   border-radius: 39px;
@@ -44,23 +44,59 @@ body {
   justify-content: space-between;
   color: var(--button-color);
   font-size: 15px;
+  
+}
+.line-height{
+  text-align: end;
+  line-height: 23px;
 }
 .equal-one,
 .equal-two {
   color: var(--text-color);
 }
-.main-input{
-    text-align: end;
+.main-input {
+  margin-top: 30px;
+  text-align: end;
 }
-.top-calc{
-    /* display: block; */
-    color: var(--button-color);
-    font-size: 24px;
+.top-calc {
+  /* display: block; */
+  color: var(--button-color);
+  font-size: 24px;
 }
-.input-value{
-    font-size: 48px;
-    color: var(--text-color);
-    background-color: transparent;
-    border: none;
-    outline: none;
+.input-value {
+  width: 100%;
+  font-size: 48px;
+  text-align: end;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 30px;
+}
+
+.btn button {
+  width: 52px;
+  height: 52px;
+  border-radius: 108px;
+  font-size: 32px;
+  color: var(--text-color);
+  background-color: var(--button-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-zero button {
+  width: 124px;
+}
+.light button {
+  color: var(--primary-color);
+  background-color: var(--text-color);
+}
+.orange button {
+  background-color: var(--secondary-color);
 }
